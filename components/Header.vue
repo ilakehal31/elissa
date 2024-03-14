@@ -12,15 +12,16 @@ const links = computed(() => [{
   to: '/#testimonials',
   icon: 'i-heroicons-academic-cap',
   active: activeHeadings.value.includes('testimonials')
-}, {
-  label: 'Blog',
-  to: '/blog',
-  },
+},
   {
   label: 'FAQ',
   to: '/#faq',
   icon: 'i-heroicons-question-mark-circle',
   active: activeHeadings.value.includes('faq')
+  },
+  {
+  label: 'Blog',
+  to: '/blog',
   },
 ])
 
@@ -41,7 +42,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     </template>
 
     <template #right>
-      <UButton label="Discover the good product for you" color="rose" variant="solid" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
+      <UButton label="Discover the right product for you." color="rose" variant="solid" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
     </template>
 
     <template #panel>

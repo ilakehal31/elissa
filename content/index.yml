@@ -1,11 +1,10 @@
 title: Elissa - The good menstrual products for you
 description: Elissa is a menstrual product company that provides the best products for you.
 hero:
-  title: Empower individuals with good menstrual products
-  description: Elissa allow you to have a better period experience with our products.
+  title: Empower individuals with the right menstrual products
+  description: Elissa allows you to find your products and to have a better menstrual experience.
   headline:
     label: Made with love for you
-    to: https://ui.nuxt.com/pro
     icon: i-heroicons-heart-solid
   links:
     - label: Discover the best product for you
@@ -19,7 +18,7 @@ hero:
       color: gray
       to: "/blog"
 logos:
-  title: They trust us
+  title: They trust and recommend us.
   icons:
     - i-simple-icons-theirishtimes
     - i-simple-icons-bookalope
@@ -32,22 +31,22 @@ features:
   description: Our mission is empower individuals with informed choices regarding menstrual products.
   items:
     - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
+      description: Describe your needs, your habits, and more. Ask for it and you shall receive.
       icon: i-heroicons-heart-solid
     - title: Accesible
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
+      description: Find the best recommendations on your phone, your laptop, and any device you use!
       icon: i-heroicons-device-phone-mobile-20-solid
     - title: Compare products
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
+      description: Elissa looks at the reviews made by other people with the same needs as you and allows you to compare their recommendations to find what YOU think is best.
       icon: i-heroicons-document-duplicate-20-solid
     - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
+      description: In the click of a few buttons, you get a recommendation and are redirected to a page that allows you to purchase your product immediately.
       icon: i-heroicons-rocket-launch
-    - title: Help you save money
-      description: The best menstrual products for you
+    - title: Save money
+      description: Stop wasting your money on testing different products to see which is the best fit. Elissa saves your money and your time.
       icon: i-heroicons-currency-dollar
     - title: Analytics of the product
-      description: Show you the analytics of the product and the composition.
+      description: Stop wondering what you are putting in your body, Elissa gives you a clear view of the components of the products you are interested in.
       icon: i-heroicons-chart-bar
 testimonials:
   headline: Testimonials
@@ -63,7 +62,7 @@ testimonials:
           loading: lazy
     - quote: I feel to be a part of a community that cares about my period experience.
       author:
-        name: Manita Mccarthy 
+        name: Manita Mccarthy
         description: CEO at Company
         avatar:
           src: https://i.pravatar.cc/120?img=20
@@ -98,7 +97,7 @@ testimonials:
           loading: lazy
 cta:
   title: Discover the best menstrual products for you
-  description: Elissa the comparator that really care about the period experience of their customers. 
+  description: Elissa compares reviews and gives you a personalized rating because we care about your menstrual experience and want to offer you the best period you can have.
   links:
     - label: Discover
       size: xl
@@ -107,15 +106,13 @@ faq:
   description: Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.
   items:
     - label: What is Elissa?
-      content: Elissa is a menstrual comparator that provides the best products for you.
+      content: Elissa is a tool built on a customized score for reviews on menstrual products, creating a comparison score to choose the best products for you.
       defaultOpen: true
     - label: How does Elissa work?
-      content: Elissa allow you to compare menstrual products and know the composition of them.
-    - label: Is Elissa really free?
-      content: Elissa is totally free.
-    - label: Can I use Elissa and share it with my friends?
-      content: Elissa is totally free and you can share it with your friends.
-    - label: How you have the composition of the products?
-      content: Elissa have a team that analyze the composition of the products.
+      content: It's this simple! You can either choose a type of menstrual product and then enter your preferences, and we will offer you options on this type of product. Or you can just describe your needs, and we will offer you different options of catered choices for you.
+    - label: How can I share Elissa with my friends?
+      content: Feel free to send this link "link to the website" and share it with as many friends as you like!
+    - label: How do you know the composition of the products?
+      content: Elissa has an expert team that analyzes the declaration of the manufacturer for the products as well as cross-references with producers and regulations to ensure that we have the best and most accurate information to deliver to you!
     - label: How can I contact you?
-      content: You can contact us by email at info-elissa@gmail.com
+      content: Feel free to email us at info-elissa@gmail.com
