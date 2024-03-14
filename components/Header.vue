@@ -4,25 +4,25 @@ const { activeHeadings, updateHeadings } = useScrollspy()
 
 const links = computed(() => [{
   label: 'Features',
-  to: '#features',
+  to: '/#features',
   icon: 'i-heroicons-cube-transparent',
   active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
 }, {
-  label: 'Pricing',
-  to: '#pricing',
-  icon: 'i-heroicons-credit-card',
-  active: activeHeadings.value.includes('pricing') && !activeHeadings.value.includes('testimonials')
-}, {
   label: 'Testimonials',
-  to: '#testimonials',
+  to: '/#testimonials',
   icon: 'i-heroicons-academic-cap',
   active: activeHeadings.value.includes('testimonials')
 }, {
+  label: 'Blog',
+  to: '/blog',
+  },
+  {
   label: 'FAQ',
-  to: '#faq',
+  to: '/#faq',
   icon: 'i-heroicons-question-mark-circle',
   active: activeHeadings.value.includes('faq')
-}])
+  },
+])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
@@ -37,11 +37,11 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
 <template>
   <UHeader :links="links">
     <template #logo>
-      Nuxt UI Pro <UBadge label="Landing" variant="subtle" class="mb-0.5" />
+      Elissa <UBadge label="App" variant="subtle" class="mb-0.5" />
     </template>
 
     <template #right>
-      <UButton label="Sign in" color="white" variant="ghost" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
+      <UButton label="Discover the good product for you" color="rose" variant="solid" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
     </template>
 
     <template #panel>

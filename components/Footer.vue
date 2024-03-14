@@ -7,13 +7,11 @@ const links = [{
     label: 'Docs'
   }, {
     label: 'Roadmap'
-  }, {
-    label: 'Changelog'
   }]
 }, {
   label: 'Features',
   children: [{
-    label: 'Affiliates'
+    label: 'Analyses'
   }, {
     label: 'Portal'
   }, {
@@ -24,9 +22,7 @@ const links = [{
 }, {
   label: 'Company',
   children: [{
-    label: 'About'
-  }, {
-    label: 'Pricing'
+    label: 'Our story'
   }, {
     label: 'Careers'
   }, {
@@ -73,14 +69,12 @@ function onSubmit () {
 
     <template #left>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © {{ new Date().getFullYear() }}. All rights reserved.
+        Copyright © {{ new Date().getFullYear() }}. All rights reserved to Elissa.
       </p>
     </template>
 
     <template #right>
       <UColorModeButton size="sm" />
-
-      <UButton to="https://github.com/nuxt-ui-pro/landing" target="_blank" icon="i-simple-icons-github" aria-label="GitHub" color="gray" variant="ghost" />
     </template>
   </UFooter>
 </template>

@@ -1,4 +1,14 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+import { useDraggable } from '@vueuse/core'
+
+const el = ref<HTMLElement | null>(null)
+
+const { x, y, style } = useDraggable(el, {
+  initialValue: { x: 400, y: 400 },
+})
+
+
 const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
 
 useSeoMeta({
@@ -24,7 +34,19 @@ useSeoMeta({
         </UBadge>
       </template>
 
-      <Placeholder />
+      <img src="../public/ab55e4ad-6603-427a-baee-4489a526381d.svg" alt="woman" :style="{ width: '1500px', height: '400px' }">
+
+      <UPageGrid>
+        <div ref="el" :style="style" style="position: absolute">
+        <img src="../public/dba8c252-86fd-4ed9-9f36-a91c0844f880.svg" alt="" :style="{ width: '50px', height: '200px' }">
+        </div>
+
+        <div ref="el" :style="style" style="position: absolute">
+        <img src="../public/54a1e284-48a8-4a17-8b29-a2e2621587e2.svg" alt="" :style="{ width: '50px', height: '200px', margin: '150px' }">
+        </div>
+      </UPageGrid>
+
+      
 
       <ULandingLogos :title="page.logos.title" align="center">
         <UIcon v-for="icon in page.logos.icons" :key="icon" :name="icon" class="w-12 h-12 lg:w-16 lg:h-16 flex-shrink-0 text-gray-900 dark:text-white" />
@@ -35,12 +57,6 @@ useSeoMeta({
       <UPageGrid id="features" class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
         <ULandingCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" />
       </UPageGrid>
-    </ULandingSection>
-
-    <ULandingSection :title="page.pricing.title" :description="page.pricing.description" :headline="page.pricing.headline">
-      <UPricingGrid id="pricing" compact class="scroll-mt-[calc(var(--header-height)+140px+128px+96px)]">
-        <UPricingCard v-for="(plan, index) in page.pricing.plans" :key="index" v-bind="plan" />
-      </UPricingGrid>
     </ULandingSection>
 
     <ULandingSection :headline="page.testimonials.headline" :title="page.testimonials.title" :description="page.testimonials.description">
@@ -72,3 +88,8 @@ useSeoMeta({
     </ULandingSection>
   </div>
 </template>
+
+
+<style>
+
+</style>
