@@ -111,7 +111,7 @@ faq:
     - label: How does Elissa work?
       content: It's this simple! You can either choose a type of menstrual product and then enter your preferences, and we will offer you options on this type of product. Or you can just describe your needs, and we will offer you different options of catered choices for you.
     - label: How can I share Elissa with my friends?
-      content: Feel free to send this link "link to the website" and share it with as many friends as you like!
+      content: Feel free to send this link "https://elissa-bay.vercel.app/" and share it with as many friends as you like!
     - label: How do you know the composition of the products?
       content: Elissa has an expert team that analyzes the declaration of the manufacturer for the products as well as cross-references with producers and regulations to ensure that we have the best and most accurate information to deliver to you!
     - label: How can I contact you?
