@@ -42,7 +42,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
     </template>
 
     <template #right>
-      <UButton label="Discover the right product for you." color="rose" variant="solid" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
+      <UButton label="Discover the right product for you." to="https://elissa.streamlit.app/engine" color="rose" variant="solid" trailing-icon="i-heroicons-arrow-right-20-solid" class="hidden lg:flex" />
     </template>
 
     <template #panel>
